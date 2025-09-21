@@ -1,0 +1,65 @@
+DETAILED GITHUB INSTRUCTIONS WITH SCREENSHOTS
+
+STEP 1: CREATE A GITHUB ACCOUNT (Skip if you already have one)
+- Go to https://github.com
+- Click "Sign up" in the top right corner
+- Follow the registration process with your email
+
+STEP 2: CREATE A NEW REPOSITORY
+- After logging in to GitHub, look at the top-right corner of the page
+- Click on the "+" icon (plus sign)
+- Select "New repository" from the dropdown menu
+- On the "Create a new repository" page:
+  * Enter "medicare-website" as the Repository name
+  * (Optional) Add a description like "A medical healthcare website"
+  * Choose Public (anyone can see) or Private (only you can see)
+  * DO NOT check "Add a README file" or any other options
+  * Click the green "Create repository" button at the bottom
+
+STEP 3: CONNECT YOUR LOCAL REPOSITORY
+- After creating the repository, you'll see a "Quick setup" page
+- Look for the section titled "…or push an existing repository from the command line"
+- Copy the two commands shown there, which look like:
+  
+  git remote add origin https://github.com/YOUR-USERNAME/medicare-website.git
+  git push -u origin main
+
+- Open your terminal in TRAI AI and paste these commands one by one
+- For the first command: git remote add origin https://github.com/YOUR-USERNAME/medicare-website.git
+- For the second command: git push -u origin main
+- You may be prompted to enter your GitHub username and password
+  * When prompted for username, type your GitHub username and press Enter
+  * When prompted for password, you'll need to use a personal access token instead of your regular password
+  * The password field won't show any characters as you type (no asterisks) for security reasons
+
+STEP 4: ENABLE GITHUB PAGES (To make your website live online)
+- After pushing your code, go to your repository page on GitHub
+- Click on "Settings" (tab with gear icon) near the top of the page
+- Scroll down to the "GitHub Pages" section (or look for it in the left sidebar)
+- Under "Source", click the dropdown that says "None" and select "main"
+- Click "Save"
+- After a few minutes, you'll see a message saying "Your site is published at https://YOUR-USERNAME.github.io/medicare-website/"
+- This is the URL you can share in your WhatsApp group
+
+STEP 5: SHARE YOUR WEBSITE
+- Copy either:
+  * Your repository URL: https://github.com/YOUR-USERNAME/medicare-website
+  * Your live website URL: https://YOUR-USERNAME.github.io/medicare-website
+- Paste this URL in your WhatsApp group
+- Add a message like "Check out our new medical healthcare website!"
+
+TROUBLESHOOTING:
+- If you're asked for credentials when pushing, you may need to create a personal access token:
+  * Go to GitHub.com → Settings → Developer settings → Personal access tokens → Tokens (classic)
+  * Click "Generate new token" → "Generate new token (classic)"
+  * Give it a name, set expiration, and check "repo" permissions
+  * Click "Generate token" and copy the token
+  * Use this token instead of your password when prompted
+
+ABOUT IMAGES AND EXTERNAL RESOURCES
+- All images in your website now use embedded SVG data URIs instead of external placeholder images
+- This ensures your website works without internet connection and loads faster
+- When adding new images to your website in the future, consider:
+  * Using relative paths to images stored in your repository (e.g., "images/logo.png")
+  * Using data URIs for small images (as we've done)
+  * Hosting larger images on a dedicated image hosting service
